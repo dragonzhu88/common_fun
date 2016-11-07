@@ -20,9 +20,6 @@ function array_search_by_keyword($array,$keyword){
 
 //@todo 根据关键字搜索数组中相匹配的键，并形成新的数组返回
 function array_search_by_key($array,$keyword){
-
-//  var_dump($array);
-
   $result = [];
   foreach($array as $k => $v){
 
@@ -33,6 +30,8 @@ function array_search_by_key($array,$keyword){
   return $result;
 }
 
+
+//@todo 测试部分
 $array = [
   [
     'id' => 1,
@@ -55,7 +54,7 @@ $array = [
 $keyword = 'ggg';
 
 $result = array_search_by_keyword($array,$keyword);
-echo "<pre>";
+
 var_dump($result);
 
 $keyword = 1;
