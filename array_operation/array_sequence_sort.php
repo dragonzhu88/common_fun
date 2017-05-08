@@ -32,7 +32,7 @@ $arrayList = [
 ];
 
 $field = 'id';
-$type = 'SORT_DESC';
+$type = 'SORT_ASC';
 
 
 /**
